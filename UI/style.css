@@ -1,0 +1,158 @@
+/*----------FIGMA DESIGN CSS SNIPPETS------------
+        background: linear-gradient(180deg, #271156 0%, rgba(34, 222, 177, 0.62) 100%);
+        border-radius: 17px;
+
+        /*Colour for name prompt: rgba(147, 141, 141, 0.5);
+        BUDDIE text:
+                    color: #FFF;
+                    text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+-------------------------------------------------*/
+
+
+/********GENERAL STYLES***********/
+/*********************************/
+html {
+    font-family: 'Karla', sans-serif;
+    font-style: normal;
+    color: #FFF;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    min-width:100%;
+    min-height: 100%;
+}
+
+.wrapper::before{
+    background-image: url("../UI/img/Cloud.jpg");
+    background-size: contain;
+    content:"";
+    z-index: -2;
+    opacity: 0.4;
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper::after{
+    background: linear-gradient(180deg, #271156 0%, rgba(34, 222, 177, 0.62) 100%);
+    content: "";
+    opacity: 1;
+    z-index: -1;
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.container-fluid{
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 17px;
+    padding-bottom: 3%;
+    margin: auto 1%;
+}
+p,h1{
+    font-family: "Century Gothic", sans-serif;
+}
+
+p{
+    font-size: 1.5em;
+}
+
+h1{
+    color: #FFF;
+    text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+    font-weight: bold; 
+    margin-bottom: 3%;
+    letter-spacing: 2px;
+}
+ .navbar{
+    margin-bottom: 0;
+ }
+
+.navbar-nav > li{
+    position: relative;
+}
+
+.navbar-nav .active a::after{
+    border-bottom: 3px solid #fff;
+    bottom: -5px;
+    content: " ";
+    left: 0;
+    position: absolute;
+    right: 0;
+}
+.nav-item{
+    padding:0px 10px;
+}
+
+.nav-link{
+    font-size: 1.2rem;
+}
+
+a {
+	cursor: pointer;
+}
+
+.social-media{
+    width:10px;
+    height:10px;
+}
+
+.container{
+    padding: 0;
+}
+
+.main-detail{
+    width: 80%;
+}
+.main-img{
+    width: 80%;
+    height: 70%;
+    margin-bottom: 2%;  
+}
+
+.i-phone{
+    width: 40%;
+    padding: 0;
+    margin: 0;
+}
+
+.top-phone{
+    position: absolute;
+    top: 0;
+    left: 23%;
+    filter: blur(20%)
+}
+
+.bottom-phone{
+   position: absolute;
+   right: 15%;
+   top: 18%;
+}
+.left-div{
+    text-align: left;
+    margin-top: 5%;
+    color: #fff;
+    
+}
+
+.right-div{
+    text-align: center;
+    position: relative;
+    margin-top: 0;
+    padding: 0;
+}
+p.footer{
+    text-align: left;
+    color: white;
+    padding-left:2%;
+    font-size: 1rem;
+}
